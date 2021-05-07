@@ -5,7 +5,8 @@ const _nullSession = {
     id: null,
 };
 
-const sessionsReducer = (state = _nullSession, action) => {
+const sessionsReducer = (state = {}, action) => {
+    debugger
     Object.freeze(state)
     switch (action.type) {
         case RECEIVE_CURRENT_USER:
@@ -18,5 +19,3 @@ const sessionsReducer = (state = _nullSession, action) => {
 }
 
 export default sessionsReducer;
-
-// added comment
